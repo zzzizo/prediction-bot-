@@ -1,0 +1,4 @@
+TRADING STRATEGY PERFORMANCE REPORT
+Generated: 2026-03-15 06:15:50
+
+See this file and backtest_results.json for detailed metrics.

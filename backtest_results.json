@@ -1,0 +1,479 @@
+{
+  "RSI + EMA": {
+    "stats": {
+      "total_balance": 493.7808369860489,
+      "total_return_percent": -1.2438326027902236,
+      "wallet_usd": 493.4558553997214,
+      "wallet_btc": 0.0,
+      "safe_wallet": 0.32498158632751384,
+      "total_trades": 116,
+      "buy_trades": 58,
+      "sell_trades": 58,
+      "profitable_trades": 6,
+      "losing_trades": 52,
+      "win_rate": 10.344827586206897,
+      "total_profit": -3.336998556059193,
+      "avg_profit_per_trade": -0.057534457863089535
+    },
+    "trades": [
+      {
+        "type": "BUY",
+        "price": 66971.79,
+        "amount": 0.0007458364185875875,
+        "candle": 106
+      },
+      {
+        "type": "SELL",
+        "price": 66953.24,
+        "amount": 0.0007458364185875875,
+        "profit": -0.0637714302992265,
+        "pnl_percent": -0.12767053112958257,
+        "candle": 107
+      },
+      {
+        "type": "BUY",
+        "price": 67020.1,
+        "amount": 0.0007451292109995824,
+        "candle": 111
+      },
+      {
+        "type": "SELL",
+        "price": 66995.24,
+        "amount": 0.0007451292109995824,
+        "profit": -0.06844402250737858,
+        "pnl_percent": -0.13705625625745368,
+        "candle": 122
+      },
+      {
+        "type": "BUY",
+        "price": 67031.17,
+        "amount": 0.0007448296488460699,
+        "candle": 126
+      },
+      {
+        "type": "SELL",
+        "price": 66963.13,
+        "amount": 0.0007448296488460699,
+        "profit": -0.10055433391101332,
+        "pnl_percent": -0.20140351123214859,
+        "candle": 127
+      },
+      {
+        "type": "BUY",
+        "price": 67004.06,
+        "amount": 0.0007449065736404961,
+        "candle": 133
+      },
+      {
+        "type": "SELL",
+        "price": 66997.3,
+        "amount": 0.0007449065736404961,
+        "profit": -0.05494229762397396,
+        "pnl_percent": -0.1100788519382254,
+        "candle": 135
+      },
+      {
+        "type": "BUY",
+        "price": 67020.78,
+        "amount": 0.0007445643700743878,
+        "candle": 141
+      },
+      {
+        "type": "SELL",
+        "price": 66985.0,
+        "amount": 0.0007445643700743878,
+        "profit": -0.0765151574906966,
+        "pnl_percent": -0.15333304088672628,
+        "candle": 145
+      },
+      {
+        "type": "BUY",
+        "price": 67024.47,
+        "amount": 0.000744334880229214,
+        "candle": 146
+      },
+      {
+        "type": "SELL",
+        "price": 66999.79,
+        "amount": 0.000744334880229214,
+        "profit": -0.06824046550909912,
+        "pnl_percent": -0.13678555011328392,
+        "candle": 156
+      },
+      {
+        "type": "BUY",
+        "price": 67056.8,
+        "amount": 0.0007437999541028978,
+        "candle": 163
+      },
+      {
+        "type": "SELL",
+        "price": 67017.52,
+        "amount": 0.0007437999541028978,
+        "profit": -0.07906409049725482,
+        "pnl_percent": -0.1585186289831963,
+        "candle": 166
+      },
+      {
+        "type": "BUY",
+        "price": 67056.15,
+        "amount": 0.0007436149939292711,
+        "candle": 174
+      },
+      {
+        "type": "SELL",
+        "price": 67042.0,
+        "amount": 0.0007436149939292711,
+        "profit": -0.06037558858709957,
+        "pnl_percent": -0.12108061676668314,
+        "candle": 182
+      },
+      {
+        "type": "BUY",
+        "price": 66832.86,
+        "amount": 0.0007459345695816838,
+        "candle": 222
+      },
+      {
+        "type": "SELL",
+        "price": 67126.43,
+        "amount": 0.0007459345695816838,
+        "profit": 0.16891208692248938,
+        "pnl_percent": 0.3388207088548947,
+        "candle": 251
+      },
+      {
+        "type": "BUY",
+        "price": 67145.87,
+        "amount": 0.0007425086981922925,
+        "candle": 252
+      },
+      {
+        "type": "SELL",
+        "price": 67171.31,
+        "amount": 0.0007425086981922925,
+        "profit": -0.030985860661957076,
+        "pnl_percent": -0.06215022606751154,
+        "candle": 269
+      }
+    ]
+  },
+  "Bollinger Bands": {
+    "stats": {
+      "total_balance": 488.87922435082555,
+      "total_return_percent": -2.2241551298348896,
+      "wallet_usd": 488.5018636255101,
+      "wallet_btc": 0.0,
+      "safe_wallet": 0.3773607253154445,
+      "total_trades": 214,
+      "buy_trades": 107,
+      "sell_trades": 107,
+      "profitable_trades": 9,
+      "losing_trades": 98,
+      "win_rate": 8.411214953271028,
+      "total_profit": -5.830096977871307,
+      "avg_profit_per_trade": -0.05448688764365707
+    },
+    "trades": [
+      {
+        "type": "BUY",
+        "price": 66992.74,
+        "amount": 0.0007456031802849084,
+        "candle": 102
+      },
+      {
+        "type": "SELL",
+        "price": 66956.07,
+        "amount": 0.0007456031802849084,
+        "profit": -0.07726392735241916,
+        "pnl_percent": -0.15468253724208042,
+        "candle": 104
+      },
+      {
+        "type": "BUY",
+        "price": 66971.79,
+        "amount": 0.0007456465824440037,
+        "candle": 106
+      },
+      {
+        "type": "SELL",
+        "price": 66953.24,
+        "amount": 0.0007456465824440037,
+        "profit": -0.06375519869387603,
+        "pnl_percent": -0.12767053112957266,
+        "candle": 107
+      },
+      {
+        "type": "BUY",
+        "price": 66985.46,
+        "amount": 0.0007453247833287195,
+        "candle": 108
+      },
+      {
+        "type": "SELL",
+        "price": 67051.6,
+        "amount": 0.0007453247833287195,
+        "profit": -0.0006794380724812754,
+        "pnl_percent": -0.0013608923488745313,
+        "candle": 113
+      },
+      {
+        "type": "BUY",
+        "price": 67009.28,
+        "amount": 0.0007449843214621185,
+        "candle": 114
+      },
+      {
+        "type": "SELL",
+        "price": 66995.24,
+        "amount": 0.0007449843214621185,
+        "profit": -0.06036998328591636,
+        "pnl_percent": -0.12093136950582846,
+        "candle": 122
+      },
+      {
+        "type": "BUY",
+        "price": 67031.17,
+        "amount": 0.0007445765894409362,
+        "candle": 126
+      },
+      {
+        "type": "SELL",
+        "price": 66963.13,
+        "amount": 0.0007445765894409362,
+        "profit": -0.10052017009924441,
+        "pnl_percent": -0.20140351123214872,
+        "candle": 127
+      },
+      {
+        "type": "BUY",
+        "price": 67016.01,
+        "amount": 0.00074452070476664,
+        "candle": 130
+      },
+      {
+        "type": "SELL",
+        "price": 66976.16,
+        "amount": 0.00074452070476664,
+        "profit": -0.07953428793070572,
+        "pnl_percent": -0.15940393944669204,
+        "candle": 131
+      },
+      {
+        "type": "BUY",
+        "price": 67004.06,
+        "amount": 0.0007444604407521624,
+        "candle": 133
+      },
+      {
+        "type": "SELL",
+        "price": 66997.3,
+        "amount": 0.0007444604407521624,
+        "profit": -0.05490939206669054,
+        "pnl_percent": -0.11007885193822799,
+        "candle": 135
+      },
+      {
+        "type": "BUY",
+        "price": 67014.52,
+        "amount": 0.0007441879521678719,
+        "candle": 139
+      },
+      {
+        "type": "SELL",
+        "price": 66985.0,
+        "amount": 0.0007441879521678719,
+        "profit": -0.0718178583239677,
+        "pnl_percent": -0.14400610494562924,
+        "candle": 145
+      },
+      {
+        "type": "BUY",
+        "price": 67024.47,
+        "amount": 0.0007438960227574481,
+        "candle": 146
+      },
+      {
+        "type": "SELL",
+        "price": 67000.22,
+        "amount": 0.0007438960227574481,
+        "profit": -0.0678806757337469,
+        "pnl_percent": -0.13614463493707057,
+        "candle": 150
+      },
+      {
+        "type": "BUY",
+        "price": 67035.35,
+        "amount": 0.0007435997493449956,
+        "candle": 151
+      },
+      {
+        "type": "SELL",
+        "price": 67000.26,
+        "amount": 0.0007435997493449956,
+        "profit": -0.07591429174657094,
+        "pnl_percent": -0.1522931706927873,
+        "candle": 155
+      }
+    ]
+  },
+  "MACD": {
+    "stats": {
+      "total_balance": 497.9243762377133,
+      "total_return_percent": -0.41512475245733643,
+      "wallet_usd": 497.5636131368843,
+      "wallet_btc": 0.0,
+      "safe_wallet": 0.36076310082901486,
+      "total_trades": 42,
+      "buy_trades": 21,
+      "sell_trades": 21,
+      "profitable_trades": 5,
+      "losing_trades": 16,
+      "win_rate": 23.809523809523807,
+      "total_profit": -1.0280242857955315,
+      "avg_profit_per_trade": -0.04895353741883483
+    },
+    "trades": [
+      {
+        "type": "BUY",
+        "price": 67068.9,
+        "amount": 0.0007447565115873379,
+        "candle": 112
+      },
+      {
+        "type": "SELL",
+        "price": 66940.48,
+        "amount": 0.0007447565115873379,
+        "profit": -0.14549598958682708,
+        "pnl_percent": -0.2912832624360902,
+        "candle": 129
+      },
+      {
+        "type": "BUY",
+        "price": 67040.76,
+        "amount": 0.0007447778030953151,
+        "candle": 142
+      },
+      {
+        "type": "SELL",
+        "price": 66960.9,
+        "amount": 0.0007447778030953151,
+        "profit": -0.10934894735047607,
+        "pnl_percent": -0.21900243970981062,
+        "candle": 158
+      },
+      {
+        "type": "BUY",
+        "price": 67025.61,
+        "amount": 0.0007447086709662904,
+        "candle": 160
+      },
+      {
+        "type": "SELL",
+        "price": 67005.75,
+        "amount": 0.0007447086709662904,
+        "profit": -0.06468967723499475,
+        "pnl_percent": -0.1296008346660423,
+        "candle": 161
+      },
+      {
+        "type": "BUY",
+        "price": 67036.85,
+        "amount": 0.0007444129458611904,
+        "candle": 165
+      },
+      {
+        "type": "SELL",
+        "price": 67017.52,
+        "amount": 0.0007444129458611904,
+        "profit": -0.06427821173100767,
+        "pnl_percent": -0.12880605219368074,
+        "candle": 166
+      },
+      {
+        "type": "BUY",
+        "price": 67029.3,
+        "amount": 0.000744326545055727,
+        "candle": 170
+      },
+      {
+        "type": "SELL",
+        "price": 66979.91,
+        "amount": 0.000744326545055727,
+        "profit": -0.08661721305874437,
+        "pnl_percent": -0.17361051062743896,
+        "candle": 171
+      },
+      {
+        "type": "BUY",
+        "price": 67069.86,
+        "amount": 0.0007436730158403586,
+        "candle": 175
+      },
+      {
+        "type": "SELL",
+        "price": 67003.02,
+        "amount": 0.0007436730158403586,
+        "profit": -0.09953544233257361,
+        "pnl_percent": -0.19955762543710318,
+        "candle": 188
+      },
+      {
+        "type": "BUY",
+        "price": 66920.8,
+        "amount": 0.0007451063595025131,
+        "candle": 225
+      },
+      {
+        "type": "SELL",
+        "price": 67221.75,
+        "amount": 0.0007451063595025131,
+        "profit": 0.17415240547039446,
+        "pnl_percent": 0.3492609920981244,
+        "candle": 280
+      },
+      {
+        "type": "BUY",
+        "price": 67197.79,
+        "amount": 0.0007420902720801195,
+        "candle": 285
+      },
+      {
+        "type": "SELL",
+        "price": 67157.03,
+        "amount": 0.0007420902720801195,
+        "profit": -0.08008417815477031,
+        "pnl_percent": -0.16059609996100926,
+        "candle": 287
+      },
+      {
+        "type": "BUY",
+        "price": 67135.01,
+        "amount": 0.000742590775993906,
+        "candle": 319
+      },
+      {
+        "type": "SELL",
+        "price": 67357.05,
+        "amount": 0.000742590775993906,
+        "profit": 0.11486613187353356,
+        "pnl_percent": 0.23040578976603932,
+        "candle": 367
+      },
+      {
+        "type": "BUY",
+        "price": 67331.29,
+        "amount": 0.000740437192746916,
+        "candle": 404
+      },
+      {
+        "type": "SELL",
+        "price": 67267.19,
+        "amount": 0.000740437192746916,
+        "profit": -0.09726915338264774,
+        "pnl_percent": -0.1951057079108331,
+        "candle": 406
+      }
+    ]
+  }
+}
