@@ -142,7 +142,7 @@ def stochastic(closes, lows, highs, period=14, smoothing=3):
 # ============ STRATEGY PREDICTION FUNCTIONS ============
 
 def predict_rsi_ema(closes):
-    """RSI + EMA strategy"""
+    """RSI + EMA strategy - Original with improved discipline"""
     if len(closes) < 20 or not all(isinstance(c, (int, float)) for c in closes[-20:]):
         return "Hold"
     ema5 = ema(closes[-20:], 5)
@@ -155,7 +155,7 @@ def predict_rsi_ema(closes):
 
 
 def predict_bb(closes):
-    """Bollinger Bands strategy"""
+    """Bollinger Bands strategy - Original with risk management"""
     if len(closes) < 20 or not all(isinstance(c, (int, float)) for c in closes[-20:]):
         return "Hold"
     lower, mid, upper = bollinger_bands(closes[-20:])
@@ -169,7 +169,7 @@ def predict_bb(closes):
 
 
 def predict_macd(closes):
-    """MACD strategy"""
+    """MACD strategy - Original with risk management"""
     if len(closes) < 30 or not all(isinstance(c, (int, float)) for c in closes[-30:]):
         return "Hold"
     macd_line, signal = macd_indicator(closes[-30:])
@@ -201,51 +201,92 @@ class BacktestEngine:
         self.buy_price = 0.0
         self.btc_amount = 0.0
         
+        # Risk management parameters
+        self.stop_loss_pct = 0.005  # 0.5% stop loss
+        self.take_profit_pct = 0.02  # 2% take profit target
+        self.min_entry_strength = 4  # Require 4 consecutive signals for strong momentum
+        
         self.trades = []
         self.balances_history = []
         self.predictions = []
+        self.signal_strength = 0  # Track consecutive signals
         
     def execute_trade(self, price, prediction, candle_index):
-        """Execute trade based on prediction"""
-        if prediction == "Up" and not self.position:
-            usd_to_use = self.wallet_usd * self.trade_percent
-            if usd_to_use > 0:
-                btc_to_buy = usd_to_use / price * (1 - self.fee_rate)
-                self.wallet_usd -= usd_to_use
-                self.wallet_btc += btc_to_buy
-                self.position = True
-                self.buy_price = price
-                self.btc_amount = btc_to_buy
-                self.trades.append({
-                    'type': 'BUY',
-                    'price': price,
-                    'amount': btc_to_buy,
-                    'candle': candle_index
-                })
-                
-        elif prediction == "Down" and self.position:
-            usd_from_sell = self.btc_amount * price * (1 - self.fee_rate)
-            profit = usd_from_sell - (self.btc_amount * self.buy_price)
-            pnl_percent = (profit / (self.btc_amount * self.buy_price)) * 100 if self.btc_amount > 0 else 0
+        """Execute trade based on prediction with risk management"""
+        
+        # Check stop loss / take profit first if we have a position
+        if self.position:
+            current_pnl_pct = ((price - self.buy_price) / self.buy_price)
             
-            self.wallet_usd += usd_from_sell
-            if profit > 0:
-                half_profit = profit / 2
-                self.safe_wallet += half_profit
-                self.wallet_usd -= half_profit
+            # Stop loss exit
+            if current_pnl_pct <= -self.stop_loss_pct:
+                self._exit_position(price, candle_index, "STOP_LOSS")
+                return
             
-            self.wallet_btc -= self.btc_amount
-            self.trades.append({
-                'type': 'SELL',
-                'price': price,
-                'amount': self.btc_amount,
-                'profit': profit,
-                'pnl_percent': pnl_percent,
-                'candle': candle_index
-            })
+            # Take profit exit
+            if current_pnl_pct >= self.take_profit_pct:
+                self._exit_position(price, candle_index, "TAKE_PROFIT")
+                return
             
-            self.position = False
-            self.btc_amount = 0
+            # Exit on strong bearish signal
+            if prediction == "Down":
+                self._exit_position(price, candle_index, "SIGNAL")
+                self.signal_strength = 0
+            return  # Don't process new entries if we have open position
+        
+        # Entry logic with signal confirmation (only when no position)
+        if prediction == "Up":
+            self.signal_strength += 1
+            
+            # Only enter after required signal confirmation
+            if self.signal_strength >= self.min_entry_strength:
+                usd_to_use = self.wallet_usd * self.trade_percent
+                if usd_to_use >= 10:  # Minimum trade size to cover fees
+                    btc_to_buy = usd_to_use / price * (1 - self.fee_rate)
+                    self.wallet_usd -= usd_to_use
+                    self.wallet_btc += btc_to_buy
+                    self.position = True
+                    self.buy_price = price
+                    self.btc_amount = btc_to_buy
+                    self.trades.append({
+                        'type': 'BUY',
+                        'price': price,
+                        'amount': btc_to_buy,
+                        'candle': candle_index,
+                        'entry_strength': self.signal_strength
+                    })
+                    self.signal_strength = 0
+        else:
+            # Reset on any non-Up signal
+            self.signal_strength = 0
+    
+    def _exit_position(self, price, candle_index, exit_reason):
+        """Close position with proper accounting"""
+        usd_from_sell = self.btc_amount * price * (1 - self.fee_rate)
+        profit = usd_from_sell - (self.btc_amount * self.buy_price)
+        pnl_percent = (profit / (self.btc_amount * self.buy_price)) * 100 if self.btc_amount > 0 else 0
+        
+        self.wallet_usd += usd_from_sell
+        self.wallet_btc -= self.btc_amount
+        
+        # Lock in profits to safe wallet
+        if profit > 0:
+            half_profit = profit / 2
+            self.safe_wallet += half_profit
+            self.wallet_usd -= half_profit
+        
+        self.trades.append({
+            'type': 'SELL',
+            'price': price,
+            'amount': self.btc_amount,
+            'profit': profit,
+            'pnl_percent': pnl_percent,
+            'candle': candle_index,
+            'exit_reason': exit_reason
+        })
+        
+        self.position = False
+        self.btc_amount = 0
     
     def get_total_balance(self, current_price):
         """Calculate total balance in USD"""
@@ -344,10 +385,10 @@ def main():
     print(f"Fee Rate: 0.1%")
     print("="*70 + "\n")
     
-    # Fetch historical data (last 7 days of 1-minute candles)
+    # Fetch historical data (last 7 days of 5-minute candles)
     print("Fetching historical data from Binance...")
     start_time = datetime.now() - timedelta(days=7)
-    klines = get_klines_historical('BTCUSDT', interval='1m', start_time=start_time, limit=10080)
+    klines = get_klines_historical('BTCUSDT', interval='5m', start_time=start_time, limit=2016)
     
     if not klines or len(klines) < 100:
         print("Error: Could not fetch sufficient historical data")

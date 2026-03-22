@@ -1,478 +1,538 @@
 {
   "RSI + EMA": {
     "stats": {
-      "total_balance": 493.7808369860489,
-      "total_return_percent": -1.2438326027902236,
-      "wallet_usd": 493.4558553997214,
+      "total_balance": 497.33905306223636,
+      "total_return_percent": -0.532189387552728,
+      "wallet_usd": 496.71812090171323,
       "wallet_btc": 0.0,
-      "safe_wallet": 0.32498158632751384,
-      "total_trades": 116,
-      "buy_trades": 58,
-      "sell_trades": 58,
-      "profitable_trades": 6,
-      "losing_trades": 52,
-      "win_rate": 10.344827586206897,
-      "total_profit": -3.336998556059193,
-      "avg_profit_per_trade": -0.057534457863089535
+      "safe_wallet": 0.620932160523104,
+      "total_trades": 58,
+      "buy_trades": 29,
+      "sell_trades": 29,
+      "profitable_trades": 4,
+      "losing_trades": 25,
+      "win_rate": 13.793103448275861,
+      "total_profit": -1.2148555930667015,
+      "avg_profit_per_trade": -0.04189157217471385
     },
     "trades": [
       {
         "type": "BUY",
-        "price": 66971.79,
-        "amount": 0.0007458364185875875,
-        "candle": 106
+        "price": 70594.73,
+        "amount": 0.0007075598985929971,
+        "candle": 120,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66953.24,
-        "amount": 0.0007458364185875875,
-        "profit": -0.0637714302992265,
-        "pnl_percent": -0.12767053112958257,
-        "candle": 107
+        "price": 71568.68,
+        "amount": 0.0007075598985929971,
+        "profit": 0.63848883527141,
+        "pnl_percent": 1.2782559264692892,
+        "candle": 154,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67020.1,
-        "amount": 0.0007451292109995824,
-        "candle": 111
+        "price": 71342.0,
+        "amount": 0.0007005256022724595,
+        "candle": 181,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66995.24,
-        "amount": 0.0007451292109995824,
-        "profit": -0.06844402250737858,
-        "pnl_percent": -0.13705625625745368,
-        "candle": 122
+        "price": 71271.83,
+        "amount": 0.0007005256022724595,
+        "profit": -0.0990836231472727,
+        "pnl_percent": -0.19825885172830246,
+        "candle": 191,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67031.17,
-        "amount": 0.0007448296488460699,
-        "candle": 126
+        "price": 71534.38,
+        "amount": 0.0006984334158430905,
+        "candle": 198,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66963.13,
-        "amount": 0.0007448296488460699,
-        "profit": -0.10055433391101332,
-        "pnl_percent": -0.20140351123214859,
-        "candle": 127
+        "price": 71241.61,
+        "amount": 0.0006984334158430905,
+        "profit": -0.2542378721788481,
+        "pnl_percent": -0.5088624658520944,
+        "candle": 206,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67004.06,
-        "amount": 0.0007449065736404961,
-        "candle": 133
+        "price": 71612.22,
+        "amount": 0.0006972498102984328,
+        "candle": 224,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66997.3,
-        "amount": 0.0007449065736404961,
-        "profit": -0.05494229762397396,
-        "pnl_percent": -0.1100788519382254,
-        "candle": 135
+        "price": 72326.5,
+        "amount": 0.0006972498102984328,
+        "profit": 0.4476019560954114,
+        "pnl_percent": 0.8964301064818195,
+        "candle": 266,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67020.78,
-        "amount": 0.0007445643700743878,
-        "candle": 141
+        "price": 72695.81,
+        "amount": 0.0006870956024436016,
+        "candle": 283,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66985.0,
-        "amount": 0.0007445643700743878,
-        "profit": -0.0765151574906966,
-        "pnl_percent": -0.15333304088672628,
-        "candle": 145
+        "price": 72946.7,
+        "amount": 0.0006870956024436016,
+        "profit": 0.12226405891430403,
+        "pnl_percent": 0.244777931492891,
+        "candle": 305,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67024.47,
-        "amount": 0.000744334880229214,
-        "candle": 146
+        "price": 71424.88,
+        "amount": 0.000699337311587806,
+        "candle": 373,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66999.79,
-        "amount": 0.000744334880229214,
-        "profit": -0.06824046550909912,
-        "pnl_percent": -0.13678555011328392,
-        "candle": 156
+        "price": 71165.41,
+        "amount": 0.000699337311587806,
+        "profit": -0.23122567874512612,
+        "pnl_percent": -0.4629134973695323,
+        "candle": 386,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67056.8,
-        "amount": 0.0007437999541028978,
-        "candle": 163
+        "price": 70939.06,
+        "amount": 0.0007037306260615668,
+        "candle": 415,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67017.52,
-        "amount": 0.0007437999541028978,
-        "profit": -0.07906409049725482,
-        "pnl_percent": -0.1585186289831963,
-        "candle": 166
+        "price": 70846.71,
+        "amount": 0.0007037306260615668,
+        "profit": -0.11484652289947661,
+        "pnl_percent": -0.23005197700672084,
+        "candle": 418,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67056.15,
-        "amount": 0.0007436149939292711,
-        "candle": 174
+        "price": 70916.78,
+        "amount": 0.0007037195391481506,
+        "candle": 422,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67042.0,
-        "amount": 0.0007436149939292711,
-        "profit": -0.06037558858709957,
-        "pnl_percent": -0.12108061676668314,
-        "candle": 182
+        "price": 70792.9,
+        "amount": 0.0007037195391481506,
+        "profit": -0.1369951234726301,
+        "pnl_percent": -0.27450893850509633,
+        "candle": 424,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 66832.86,
-        "amount": 0.0007459345695816838,
-        "candle": 222
+        "price": 70810.48,
+        "amount": 0.000704512204609571,
+        "candle": 446,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67126.43,
-        "amount": 0.0007459345695816838,
-        "profit": 0.16891208692248938,
-        "pnl_percent": 0.3388207088548947,
-        "candle": 251
+        "price": 70781.59,
+        "amount": 0.000704512204609571,
+        "profit": -0.07021985160783828,
+        "pnl_percent": -0.14075824651943578,
+        "candle": 448,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67145.87,
-        "amount": 0.0007425086981922925,
-        "candle": 252
+        "price": 70996.45,
+        "amount": 0.0007024977125806836,
+        "candle": 456,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67171.31,
-        "amount": 0.0007425086981922925,
-        "profit": -0.030985860661957076,
-        "pnl_percent": -0.06215022606751154,
-        "candle": 269
+        "price": 71039.58,
+        "amount": 0.0007024977125806836,
+        "profit": -0.01960641610909164,
+        "pnl_percent": -0.03931123316730027,
+        "candle": 476,
+        "exit_reason": "SIGNAL"
       }
     ]
   },
   "Bollinger Bands": {
     "stats": {
-      "total_balance": 488.87922435082555,
-      "total_return_percent": -2.2241551298348896,
-      "wallet_usd": 488.5018636255101,
+      "total_balance": 495.3914287629423,
+      "total_return_percent": -0.9217142474115348,
+      "wallet_usd": 494.40534766651314,
       "wallet_btc": 0.0,
-      "safe_wallet": 0.3773607253154445,
-      "total_trades": 214,
-      "buy_trades": 107,
-      "sell_trades": 107,
-      "profitable_trades": 9,
-      "losing_trades": 98,
-      "win_rate": 8.411214953271028,
-      "total_profit": -5.830096977871307,
-      "avg_profit_per_trade": -0.05448688764365707
+      "safe_wallet": 0.9860810964291993,
+      "total_trades": 90,
+      "buy_trades": 45,
+      "sell_trades": 45,
+      "profitable_trades": 10,
+      "losing_trades": 35,
+      "win_rate": 22.22222222222222,
+      "total_profit": -2.371471060121948,
+      "avg_profit_per_trade": -0.052699356891598846
     },
     "trades": [
       {
         "type": "BUY",
-        "price": 66992.74,
-        "amount": 0.0007456031802849084,
-        "candle": 102
+        "price": 70594.73,
+        "amount": 0.0007075598985929971,
+        "candle": 120,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66956.07,
-        "amount": 0.0007456031802849084,
-        "profit": -0.07726392735241916,
-        "pnl_percent": -0.15468253724208042,
-        "candle": 104
+        "price": 70545.57,
+        "amount": 0.0007075598985929971,
+        "profit": -0.08469886097020662,
+        "pnl_percent": -0.1695672892296429,
+        "candle": 121,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 66971.79,
-        "amount": 0.0007456465824440037,
-        "candle": 106
+        "price": 70630.91,
+        "amount": 0.0007070069404994084,
+        "candle": 125,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66953.24,
-        "amount": 0.0007456465824440037,
-        "profit": -0.06375519869387603,
-        "pnl_percent": -0.12767053112957266,
-        "candle": 107
+        "price": 71482.53,
+        "amount": 0.0007070069404994084,
+        "profit": 0.5515626058336522,
+        "pnl_percent": 1.1045269981655403,
+        "candle": 134,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 66985.46,
-        "amount": 0.0007453247833287195,
-        "candle": 108
+        "price": 71475.61,
+        "amount": 0.0006989671089423663,
+        "candle": 140,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67051.6,
-        "amount": 0.0007453247833287195,
-        "profit": -0.0006794380724812754,
-        "pnl_percent": -0.0013608923488745313,
-        "candle": 113
+        "price": 71373.32,
+        "amount": 0.0006989671089423663,
+        "profit": -0.12138494870973204,
+        "pnl_percent": -0.24296864342955396,
+        "candle": 148,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67009.28,
-        "amount": 0.0007449843214621185,
-        "candle": 114
+        "price": 71672.39,
+        "amount": 0.000696809164800669,
+        "candle": 152,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66995.24,
-        "amount": 0.0007449843214621185,
-        "profit": -0.06036998328591636,
-        "pnl_percent": -0.12093136950582846,
-        "candle": 122
+        "price": 71549.83,
+        "amount": 0.000696809164800669,
+        "profit": -0.135257508521903,
+        "pnl_percent": -0.2708292970277739,
+        "candle": 153,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67031.17,
-        "amount": 0.0007445765894409362,
-        "candle": 126
+        "price": 71465.43,
+        "amount": 0.0006985681299650052,
+        "candle": 178,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66963.13,
-        "amount": 0.0007445765894409362,
-        "profit": -0.10052017009924441,
-        "pnl_percent": -0.20140351123214872,
-        "candle": 127
+        "price": 71271.83,
+        "amount": 0.0006985681299650052,
+        "profit": -0.1850310189635067,
+        "pnl_percent": -0.3706293098635201,
+        "candle": 191,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67016.01,
-        "amount": 0.00074452070476664,
-        "candle": 130
+        "price": 71544.22,
+        "amount": 0.0006974706670402068,
+        "candle": 202,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66976.16,
-        "amount": 0.00074452070476664,
-        "profit": -0.07953428793070572,
-        "pnl_percent": -0.15940393944669204,
-        "candle": 131
+        "price": 71241.61,
+        "amount": 0.0006974706670402068,
+        "profit": -0.2607505318007526,
+        "pnl_percent": -0.522546209882498,
+        "candle": 206,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67004.06,
-        "amount": 0.0007444604407521624,
-        "candle": 133
+        "price": 71430.81,
+        "amount": 0.0006981435023438733,
+        "candle": 219,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66997.3,
-        "amount": 0.0007444604407521624,
-        "profit": -0.05490939206669054,
-        "pnl_percent": -0.11007885193822799,
-        "candle": 135
+        "price": 71441.63,
+        "amount": 0.0006981435023438733,
+        "profit": -0.04232259708599173,
+        "pnl_percent": -0.08486762224871333,
+        "candle": 226,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67014.52,
-        "amount": 0.0007441879521678719,
-        "candle": 139
+        "price": 71588.04,
+        "amount": 0.0006964814366425457,
+        "candle": 230,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66985.0,
-        "amount": 0.0007441879521678719,
-        "profit": -0.0718178583239677,
-        "pnl_percent": -0.14400610494562924,
-        "candle": 145
+        "price": 71934.0,
+        "amount": 0.0006964814366425457,
+        "profit": 0.1908540221574171,
+        "pnl_percent": 0.382781816627484,
+        "candle": 233,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67024.47,
-        "amount": 0.0007438960227574481,
-        "candle": 146
+        "price": 71840.16,
+        "amount": 0.0006941004603822739,
+        "candle": 238,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67000.22,
-        "amount": 0.0007438960227574481,
-        "profit": -0.0678806757337469,
-        "pnl_percent": -0.13614463493707057,
-        "candle": 150
+        "price": 72129.92,
+        "amount": 0.0006941004603822739,
+        "profit": 0.151057138721022,
+        "pnl_percent": 0.30293651907232233,
+        "candle": 250,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67035.35,
-        "amount": 0.0007435997493449956,
-        "candle": 151
+        "price": 72494.38,
+        "amount": 0.0006878719013143135,
+        "candle": 257,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67000.26,
-        "amount": 0.0007435997493449956,
-        "profit": -0.07591429174657094,
-        "pnl_percent": -0.1522931706927873,
-        "candle": 155
+        "price": 72326.5,
+        "amount": 0.0006878719013143135,
+        "profit": -0.16523130186305934,
+        "pnl_percent": -0.33134499529481304,
+        "candle": 266,
+        "exit_reason": "SIGNAL"
       }
     ]
   },
   "MACD": {
     "stats": {
-      "total_balance": 497.9243762377133,
-      "total_return_percent": -0.41512475245733643,
-      "wallet_usd": 497.5636131368843,
-      "wallet_btc": 0.0,
-      "safe_wallet": 0.36076310082901486,
-      "total_trades": 42,
-      "buy_trades": 21,
-      "sell_trades": 21,
-      "profitable_trades": 5,
-      "losing_trades": 16,
-      "win_rate": 23.809523809523807,
-      "total_profit": -1.0280242857955315,
-      "avg_profit_per_trade": -0.04895353741883483
+      "total_balance": 499.9914558160069,
+      "total_return_percent": -0.0017088367986161758,
+      "wallet_usd": 448.5052443241658,
+      "wallet_btc": 0.0006936947940228757,
+      "safe_wallet": 1.1166856504431166,
+      "total_trades": 37,
+      "buy_trades": 19,
+      "sell_trades": 18,
+      "profitable_trades": 7,
+      "losing_trades": 11,
+      "win_rate": 38.88888888888889,
+      "total_profit": 0.3550038176797088,
+      "avg_profit_per_trade": 0.019722434315539376
     },
     "trades": [
       {
         "type": "BUY",
-        "price": 67068.9,
-        "amount": 0.0007447565115873379,
-        "candle": 112
+        "price": 70543.72,
+        "amount": 0.0007080715335114167,
+        "candle": 123,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66940.48,
-        "amount": 0.0007447565115873379,
-        "profit": -0.14549598958682708,
-        "pnl_percent": -0.2912832624360902,
-        "candle": 129
+        "price": 71238.06,
+        "amount": 0.0007080715335114167,
+        "profit": 0.44120074618973604,
+        "pnl_percent": 0.8832847771566288,
+        "candle": 160,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67040.76,
-        "amount": 0.0007447778030953151,
-        "candle": 142
+        "price": 71375.0,
+        "amount": 0.0007000636494188747,
+        "candle": 184,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66960.9,
-        "amount": 0.0007447778030953151,
-        "profit": -0.10934894735047607,
-        "pnl_percent": -0.21900243970981062,
-        "candle": 158
+        "price": 71259.75,
+        "amount": 0.0007000636494188747,
+        "profit": -0.13056869623720502,
+        "pnl_percent": -0.26130963222417425,
+        "candle": 209,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67025.61,
-        "amount": 0.0007447086709662904,
-        "candle": 160
+        "price": 71612.0,
+        "amount": 0.0006974948676230291,
+        "candle": 222,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67005.75,
-        "amount": 0.0007447086709662904,
-        "profit": -0.06468967723499475,
-        "pnl_percent": -0.1296008346660423,
-        "candle": 161
+        "price": 72438.61,
+        "amount": 0.0006974948676230291,
+        "profit": 0.5260306738331266,
+        "pnl_percent": 1.053135494051278,
+        "candle": 277,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67036.85,
-        "amount": 0.0007444129458611904,
-        "candle": 165
+        "price": 72342.09,
+        "amount": 0.0006907497805514369,
+        "candle": 281,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67017.52,
-        "amount": 0.0007444129458611904,
-        "profit": -0.06427821173100767,
-        "pnl_percent": -0.12880605219368074,
-        "candle": 166
+        "price": 73831.94,
+        "amount": 0.0006907497805514369,
+        "profit": 0.9781141642018767,
+        "pnl_percent": 1.957391692719975,
+        "candle": 301,
+        "exit_reason": "TAKE_PROFIT"
       },
       {
         "type": "BUY",
-        "price": 67029.3,
-        "amount": 0.000744326545055727,
-        "candle": 170
+        "price": 72946.7,
+        "amount": 0.0006856258414205848,
+        "candle": 305,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 66979.91,
-        "amount": 0.000744326545055727,
-        "profit": -0.08661721305874437,
-        "pnl_percent": -0.17361051062743896,
-        "candle": 171
+        "price": 72382.72,
+        "amount": 0.0006856258414205848,
+        "profit": -0.4363067253486932,
+        "pnl_percent": -0.872366700618399,
+        "candle": 308,
+        "exit_reason": "STOP_LOSS"
       },
       {
         "type": "BUY",
-        "price": 67069.86,
-        "amount": 0.0007436730158403586,
-        "candle": 175
+        "price": 71424.88,
+        "amount": 0.0006995539104893982,
+        "candle": 373,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67003.02,
-        "amount": 0.0007436730158403586,
-        "profit": -0.09953544233257361,
-        "pnl_percent": -0.19955762543710318,
-        "candle": 188
+        "price": 71190.11,
+        "amount": 0.0006995539104893982,
+        "profit": -0.21403559140426864,
+        "pnl_percent": -0.42836629196997345,
+        "candle": 391,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 66920.8,
-        "amount": 0.0007451063595025131,
-        "candle": 225
+        "price": 70846.71,
+        "amount": 0.0007048905361906528,
+        "candle": 418,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67221.75,
-        "amount": 0.0007451063595025131,
-        "profit": 0.17415240547039446,
-        "pnl_percent": 0.3492609920981244,
-        "candle": 280
+        "price": 70568.75,
+        "amount": 0.0007048905361906528,
+        "profit": -0.24567461746536878,
+        "pnl_percent": -0.4919476853618401,
+        "candle": 425,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67197.79,
-        "amount": 0.0007420902720801195,
-        "candle": 285
+        "price": 70867.93,
+        "amount": 0.0007042626839448956,
+        "candle": 445,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67157.03,
-        "amount": 0.0007420902720801195,
-        "profit": -0.08008417815477031,
-        "pnl_percent": -0.16059609996100926,
-        "candle": 287
+        "price": 71109.76,
+        "amount": 0.0007042626839448956,
+        "profit": 0.12023189442611937,
+        "pnl_percent": 0.24089914859937883,
+        "candle": 482,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67135.01,
-        "amount": 0.000742590775993906,
-        "candle": 319
+        "price": 70693.13,
+        "amount": 0.0007060184378126533,
+        "candle": 526,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67357.05,
-        "amount": 0.000742590775993906,
-        "profit": 0.11486613187353356,
-        "pnl_percent": 0.23040578976603932,
-        "candle": 367
+        "price": 70509.47,
+        "amount": 0.0007060184378126533,
+        "profit": -0.17944833214907163,
+        "pnl_percent": -0.35953913767858664,
+        "candle": 535,
+        "exit_reason": "SIGNAL"
       },
       {
         "type": "BUY",
-        "price": 67331.29,
-        "amount": 0.000740437192746916,
-        "candle": 404
+        "price": 70663.76,
+        "amount": 0.0007059875564643667,
+        "candle": 554,
+        "entry_strength": 4
       },
       {
         "type": "SELL",
-        "price": 67267.19,
-        "amount": 0.000740437192746916,
-        "profit": -0.09726915338264774,
-        "pnl_percent": -0.1951057079108331,
-        "candle": 406
+        "price": 70722.72,
+        "amount": 0.0007059875564643667,
+        "profit": -0.008304333950171383,
+        "pnl_percent": -0.016646043176863974,
+        "candle": 592,
+        "exit_reason": "SIGNAL"
       }
     ]
   }
